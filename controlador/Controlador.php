@@ -8,13 +8,11 @@
 
 require "../vendor/autoload.php";
 
-
 $saludoRecibido = $_GET['saludo'];
 
 use sumaysigue\modelo\Saludo;
 $objetoSaludo = new Saludo();
 $objetoSaludo->setSaludo($saludoRecibido);
-
 $saludo = $objetoSaludo->formatSaludo();
 
 require "../vista/plantillaSaludo.php";

@@ -17,10 +17,10 @@ class Saludo {
     private $saludo = "";
     
     public function setSaludo($saludo){
-       
+       $this->saludo = $saludo;
     }
     
     public function formatSaludo(){
-        return "";
+        return "El mensaje es: ".$this->saludo;
     }
 }
